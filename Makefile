@@ -16,9 +16,8 @@ OBJDIR := build
 CCC = g++
 
 # Compiling flags
-CCFLAGS += -Wno-deprecated-declarations -Wall -Wextra -pedantic -std=c++17 -Weffc++ -isystem$(SFML_ROOT)/include
-
-LDFLAGS += -L$(SFML_ROOT)/lib -lsfml-graphics -lsfml-audio -lsfml-window -lsfml-system
+CCFLAGS += -Wno-deprecated-declarations -Wall -Wextra -pedantic -std=c++17 -Weffc++ -isystem/mingw64/include
+LDFLAGS += -L/mingw64/lib -lsfml-graphics -lsfml-audio -lsfml-window -lsfml-system
 
 # file which contains the main function
 MAINFILE := main.cpp
